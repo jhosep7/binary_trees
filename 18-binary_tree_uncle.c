@@ -9,7 +9,7 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 	binary_tree_t *Uncle;
 
-	if (!(node->parent) || !node || !(node->parent->parent))
+	if (!(node->parent) || !node)
 	{return (NULL); }
 	Uncle = node->parent;
 	if (Uncle->parent->right != Uncle && Uncle->parent)
